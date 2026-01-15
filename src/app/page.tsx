@@ -64,9 +64,9 @@ export default function Home() {
           </p>
 
 
-          <a className={styles.button} href="https://alberic.trancart.net/tag/dantotsu-quality/">
+          <Link className={styles.button} href="/mental-models">
             Explore the mental models →
-          </a>
+          </Link>
         </section>
 
         {/* Book Source */}

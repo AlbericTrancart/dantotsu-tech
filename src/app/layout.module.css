@@ -22,3 +22,7 @@
 .links a:hover {
   color: var(--text);
 }
+
+.theodoLogo {
+    max-height: 24px;
+}
