@@ -1,17 +1,27 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import bookCoverImg from './dantotsu-book.jpg'
-
-import mentalModelImg from './mental-model.png'
+import imageImg from '@/assets/dantotsu-book.jpg'
+import logoImg from './favicon.png'
+import businessCas1Img from '@/assets/business-case-1.png'
+import mentalModelImg from '@/assets/mental-model-jedi.png'
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const dynamic = "force-static";
 
+export const metadata: Metadata = {
+  title: 'Dantotsu Quality for Tech',
+  description: 'Exploring how Toyota’s radical quality mindset can improve the way we build software',
+};
+
 export default function Home() {
   return (
-    <main className={styles.container}>
-      {/* Hero */}
-      <section className={styles.section}>
-        <h1 className={styles.hero}>Dantotsu Quality for Software Engineering</h1>
+    <>
+      <section>
+        <Image className={styles.image} src={logoImg} alt="" width={72} objectFit="contain"  />
+
+        <h1>Dantotsu Quality for Tech</h1>
+
         <p className={styles.subtitle}>
           Exploring how Toyota’s radical quality mindset can improve the way we build software
         </p>
@@ -20,7 +30,7 @@ export default function Home() {
       <hr />
 
       {/* What is Dantotsu */}
-      <section className={styles.section}>
+      <section>
         <h2>What is Dantotsu quality?</h2>
 
         <p>
@@ -42,12 +52,28 @@ export default function Home() {
 
       <hr />
 
-      {/* Source */}
       <div className={styles.wrapper}>
-        <section className={styles.section}>
+        {/* Mental Models */}
+        <section>
+          <h2>Mental models</h2>
+
+          <Image className={styles.image} src={mentalModelImg} alt="" width={300} objectFit="contain"  />
+          
+          <p>
+            A few printable mental models to challenge common coding mistakes
+          </p>
+
+
+          <a className={styles.button} href="https://alberic.trancart.net/tag/dantotsu-quality/">
+            Explore the mental models →
+          </a>
+        </section>
+
+        {/* Book Source */}
+        <section>
           <h2>Where these ideas come from</h2>
 
-          <Image className={styles.bookCover} src={bookCoverImg} alt="" width={200} objectFit="contain"  />
+          <Image className={styles.image} src={imageImg} alt="" width={200} objectFit="contain"  />
 
           <p>
             <em>
@@ -66,32 +92,20 @@ export default function Home() {
           </a>
         </section>
 
-        {/* Mental Models */}
-        <section className={styles.section}>
-          <h2>Mental models</h2>
+        <section>
+          <h2>Business case</h2>
 
+          <Image className={styles.image} src={businessCas1Img} alt="" width={300} objectFit="contain"  />
+          
           <p>
-            A few printable mental models to challenge common coding mistakes
+            Over six months, we reduced software defects by more than 10x on a new integrated IT system for a corporate restaurant operator.
           </p>
 
-          <Image className={styles.bookCover} src={mentalModelImg} alt="" width={300} objectFit="contain"  />
-
-          <a className={styles.button} href="https://alberic.trancart.net/tag/dantotsu-quality/">
-            Explore the mental models →
-          </a>
+          <Link className={styles.button} href="/business-case-corporate-restaurants">
+            More details →
+          </Link>
         </section>
       </div>
-
-      <footer className={styles.footer}>
-        <div>
-          <strong>Page created by Albéric Trancart</strong>
-        </div>
-
-        <div className={styles.links}>
-          <a href="https://alberic.trancart.net/">Blog</a>
-          <a href="https://www.linkedin.com/in/alberic-trancart/">LinkedIn</a>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }
