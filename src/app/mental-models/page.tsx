@@ -39,12 +39,12 @@ export default function Home() {
                 <Image className={styles.image} src={mentalModelSeekTheTruthImg} alt="#1 Mental Model - Seek the truth" width={800} objectFit="contain" />
             </a>
 
-            <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-seek-the-truth/" target="_blank" rel="noopener noreferrer">
+            <a href="https://alberic.trancart.net/2025/07/dantotsu-quality-code-the-broken-window/" target="_blank" rel="noopener noreferrer">
                 <Image className={styles.image} src={mentalModelBrokenWindowImg} alt="#2 Mental Model - Broken window" width={800} objectFit="contain" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-just-effing-do-it-jedi/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelJediImg} alt="#3 Mental Model - Jedi" width={800} objectFit="contain" />
+                <Image className={styles.image} src={mentalModelJediImg} alt="#3 Mental Model - JEDI" width={800} objectFit="contain" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-garbage-in-garbage-out/" target="_blank" rel="noopener noreferrer">
@@ -66,7 +66,7 @@ export default function Home() {
             <Image className={styles.image} src={mentalModelIsoProdImg} alt="#8 Mental Model - Iso prod" width={800} objectFit="contain" />
 
             <Image className={styles.image} src={mentalModelWorksByDesignImg} alt="#9 Mental Model - Works by design" width={800} objectFit="contain" />
-            
+
             <Image className={styles.image} src={mentalModelChestertonFenceImg} alt="#10 Mental Model - Chesterton's fence" width={800} objectFit="contain" />
 
             <Image className={styles.image} src={mentalModelShitWillHappenImg} alt="#11 Mental Model - Shit will happen" width={800} objectFit="contain" />
