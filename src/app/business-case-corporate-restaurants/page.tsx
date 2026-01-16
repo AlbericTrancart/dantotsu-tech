@@ -150,7 +150,7 @@ export default function Home() {
                 If the defect backlog is not shrinking, it is a strong signal that the approach is not radical enough - or not applied consistently enough.
             </p>
 
-            <Link href="/" className={styles.button}>Back to the main page</Link>
+            <Link href="/" className={styles.button}>← Back to the main page</Link>
         </section>
     </>
   );

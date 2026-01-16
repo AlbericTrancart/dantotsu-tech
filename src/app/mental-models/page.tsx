@@ -1,16 +1,4 @@
 import styles from "../page.module.css";
-import Image from "next/image";
-import mentalModelSeekTheTruthImg from '@/assets/mental-model-seek-the-truth.png'
-import mentalModelBrokenWindowImg from '@/assets/mental-model-broken-window.png'
-import mentalModelJediImg from '@/assets/mental-model-jedi.png'
-import mentalModelGarbageInGarbageOutImg from '@/assets/mental-model-garbage-in-garbage-out.png'
-import mentalModelTradeoffsImg from '@/assets/mental-model-tradeoffs.png'
-import mentalModelRightToolRightJobImg from '@/assets/mental-model-right-tool-right-job.png'
-import mentalModelComplexityImg from '@/assets/mental-model-complexity.png'
-import mentalModelIsoProdImg from '@/assets/mental-model-iso-prod.png'
-import mentalModelWorksByDesignImg from '@/assets/mental-model-works-by-design.png'
-import mentalModelChestertonFenceImg from '@/assets/mental-model-chesterton-fence.png'
-import mentalModelShitWillHappenImg from '@/assets/mental-model-shit-will-happen.png'
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -24,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-        <section>
+        <section style={{position: 'relative'}}>
             <h1>Mental models for better code quality</h1>
 
             <p>
@@ -36,42 +24,42 @@ export default function Home() {
             </p>
 
             <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-seek-the-truth/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelSeekTheTruthImg} alt="#1 Mental Model - Seek the truth" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-seek-the-truth.png" alt="#1 Mental Model - Seek the truth" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/07/dantotsu-quality-code-the-broken-window/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelBrokenWindowImg} alt="#2 Mental Model - Broken window" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-broken-window.png" alt="#2 Mental Model - Broken window" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-just-effing-do-it-jedi/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelJediImg} alt="#3 Mental Model - JEDI" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-jedi.png" alt="#3 Mental Model - JEDI" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/09/dantotsu-quality-garbage-in-garbage-out/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelGarbageInGarbageOutImg} alt="#4 Mental Model - Garbage in, garbage out" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-garbage-in-garbage-out.png" alt="#4 Mental Model - Garbage in, garbage out" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/10/dantotsu-quality-tradeoffs/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelTradeoffsImg} alt="#5 Mental Model - Tradeoffs" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-tradeoffs.png" alt="#5 Mental Model - Tradeoffs" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/10/dantotsu-quality-the-right-tool-for-the-right-job/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelRightToolRightJobImg} alt="#6 Mental Model - The right tool for the right job" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-right-tool-right-job.png" alt="#6 Mental Model - The right tool for the right job" />
             </a>
 
             <a href="https://alberic.trancart.net/2025/11/dantotsu-quality-complexity-the-ultimate-evil/" target="_blank" rel="noopener noreferrer">
-                <Image className={styles.image} src={mentalModelComplexityImg} alt="#7 Mental Model - Complexity is the ultimate evil" width={800} objectFit="contain" />
+                <img className={styles.image} src="/mental-models/mental-model-complexity.png" alt="#7 Mental Model - Complexity is the ultimate evil" />
             </a>
 
-            <Image className={styles.image} src={mentalModelIsoProdImg} alt="#8 Mental Model - Iso prod" width={800} objectFit="contain" />
+            <img className={styles.image} src="/mental-models/mental-model-iso-prod.png" alt="#8 Mental Model - Iso prod" />
 
-            <Image className={styles.image} src={mentalModelWorksByDesignImg} alt="#9 Mental Model - Works by design" width={800} objectFit="contain" />
+            <img className={styles.image} src="/mental-models/mental-model-works-by-design.png" alt="#9 Mental Model - Works by design" />
 
-            <Image className={styles.image} src={mentalModelChestertonFenceImg} alt="#10 Mental Model - Chesterton's fence" width={800} objectFit="contain" />
+            <img className={styles.image} src="/mental-models/mental-model-chesterton-fence.png" alt="#10 Mental Model - Chesterton's fence" />
 
-            <Image className={styles.image} src={mentalModelShitWillHappenImg} alt="#11 Mental Model - Shit will happen" width={800} objectFit="contain" />
+            <img className={styles.image} src="/mental-models/mental-model-shit-will-happen.png" alt="#11 Mental Model - Shit will happen" />
             
-            <Link href="/" className={styles.button}>Back to the main page</Link>
+            <Link href="/" className={styles.button}>← Back to the main page</Link>
         </section>
     </>
   );
