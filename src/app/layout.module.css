@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 24px;
   margin-top: 80px;
@@ -7,6 +8,10 @@
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.9rem;
+
+  @media(min-width: 500px) {
+    flex-direction: row;
+  }
 }
 
 .footer p {
